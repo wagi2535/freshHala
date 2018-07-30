@@ -1,0 +1,196 @@
+html{
+    font: normal 16px sans-serif;
+    color: white;
+    
+}
+body{
+    background-color: rgb(17, 18, 20);
+}
+.jumbotron{
+    width: 800px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    background-color: rgb(17, 18, 20);
+}
+.slideshow{
+    width: 800px;
+    height: 400px;
+    z-index: 0;
+    list-style: none;
+    padding: 0;
+    
+}
+.slideshow li{
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    -webkit-animation: imageAnimation 50s linear infinite;
+            animation: imageAnimation 50s linear infinite;
+}
+.slideshow li:nth-child(1){
+    background-image: url('./img/falafelW.png');
+    
+}
+.slideshow li:nth-child(2){
+    background-image: url('./img/loaded.png');
+    animation-delay: 10s
+}
+.slideshow li:nth-child(3){
+    background-image: url('./img/wrap.png');
+    animation-delay: 20s
+
+}
+.slideshow li:nth-child(4){
+    background-image: url('./img/compination.png' alt="compination");
+    animation-delay: 30s
+
+}
+.slideshow li:nth-child(5){
+    background-image: url('./img/chicken&rice.png');
+    animation-delay: 40s
+
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  
+  30% {
+      opacity: 0
+  }
+}
+.thumbnail img{
+    width: 100%;
+}
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}
+
+.description{
+    margin: 0 auto;
+}
+
+.contact{
+    margin-left: 20%;
+}
+.map{
+    margin-left: 20%;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .slideshow li {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .jumbotron {
+        width: 100%;
+    }
+}
+
+.section{
+    margin-top: 30px;
+    margin-left: 160px;
+    font-size: 16px;
+    color: white;
+    opacity: .7;
+}
+@media only screen and (max-width: 320px) {
+    .section {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .contact-section {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.contact-section{
+    margin-top: 30px;
+    color: white;
+    margin-left: 160px;
+    font-size: 16px;
+    opacity: .7;
+}
+
+/*contact*/
+.contact{
+    margin-top: 30px;
+    color: white;
+    font-size: 16px;
+    opacity: .9; 
+    line-height: 12px;
+    
+}
+
+/*footer section*/
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #222;
+	color: white;
+	padding: 20px 0;
+	margin-top: 80px;
+}
+
+footer ul {
+    list-style: none;
+	display: flex;
+}
+
+footer ul li {
+	margin-left: 16px;
+}
+
+footer p {
+	text-transform: uppercase;
+	font-size: 14px;
+	opacity: 0.6;
+	align-self: center;
+}
+
+@media (max-width: 1100px){
+    footer{
+        flex-direction: column;
+    }
+    footer p{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    footer ul li{
+        margin: 0 8px;
+    }
+}
+
+
+a{
+    color: #e6edf3;;
+}
+
+@media only screen and (max-width: 600px) {
+    .map iframe{
+        width: 100%;
+    }
+}
