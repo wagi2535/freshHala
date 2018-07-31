@@ -37,7 +37,6 @@
  ]
  
  function seeDB(){
-    
     data.forEach(function(seed){
      Hala.create(seed, function(error, fresh){
        if(error){
@@ -46,13 +45,13 @@
          console.log("add data to the database")
        }
      }) 
-     
-     
-    //   Hala.remove({}, function(err){
-    //     if(err){
-    //       console.log(err);
-    //     }
-  })
+    })
+    Hala.remove({}, function(err){
+        if(err){
+       console.log(err);
+        }
+   })
  }
  
- module.exports = seeDB
+ 
+ module.exports = seeDB;

@@ -4,11 +4,11 @@ const mongoose = require("mongoose")
 const Hala = require('./models/fresh')
 const seeDB = require("./seedb");
 
-//seeDB();
+seeDB();
 app.set('view engine', 'ejs')
 app.use(express.static(__dirname+ '/public'))
 mongoose.connect(process.env.DATABASEURL);
-//mongoose.connect("mongodb://hala:Hala2535@ds159661.mlab.com:59661/freshala")
+
 
 
 
