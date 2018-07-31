@@ -1,20 +1,21 @@
 <% include ./partials/header %>
 
-   <div class="container">
     <div class="row">
     <% fresh.forEach(function(fresh){%>
-           <div class="col-md-6">
-            <div class="thumbnail">
-                     <img src="<%=fresh.image%>" alt='menu images'>
-                    <div class="caption">
+           <div class="col-md-6 col-xs-12">
+            <div class="thumbnail" alt="Responsive image" id="img">
+                     <img src="<%=fresh.image%>">
+                    <div class="display-3 heading" >
                        <h3> <%=fresh.name %> </h3>
                     </div>
-                    <%=fresh.description%> 
+                    <p class="lead description">
+                    <%=fresh.description%>
+                    </p>
                 </div>
             </div>
       <%})%>
     </div>
-  </div>
+  
   
   
 

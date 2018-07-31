@@ -5,12 +5,14 @@ html{
 }
 body{
     background-color: rgb(17, 18, 20);
+    color:white;
 }
 .jumbotron{
-    width: 800px;
+    width: 900px;
     height: 400px;
     position: relative;
-    margin: 0 auto;
+    margin-top: 50px;
+    margin-left: 100px;
     background-color: rgb(17, 18, 20);
 }
 .slideshow{
@@ -49,7 +51,7 @@ body{
 
 }
 .slideshow li:nth-child(4){
-    background-image: url('./img/compination.png' alt="compination");
+    background-image: url('./img/compination.png');
     animation-delay: 30s
 
 }
@@ -78,7 +80,10 @@ body{
 }
 .thumbnail img{
     width: 100%;
+   
 }
+
+
 .no-cssanimations .slideshow li {
 	opacity: 1;
 }
@@ -106,10 +111,10 @@ body{
     }
 }
 
-.section{
+.hero-section{
     margin-top: 30px;
-    margin-left: 160px;
     font-size: 16px;
+    margin-left: 100px;
     color: white;
     opacity: .7;
 }
@@ -125,11 +130,32 @@ body{
         margin: 0 auto;
     }
 }
-
+#img{
+    opacity: 0.8;
+}
+.description{
+    opacity: 0.8;
+}
+.heading{
+    opacity: 0.8;
+    
+}
+#img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.heading:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.description:hover{
+    opacity: 1;
+    cursor:pointer;
+}
 .contact-section{
     margin-top: 30px;
     color: white;
-    margin-left: 160px;
+    margin-left: 260px;
     font-size: 16px;
     opacity: .7;
 }
