@@ -7,7 +7,8 @@ const seeDB = require("./seedb");
 //seeDB();
 app.set('view engine', 'ejs')
 app.use(express.static(__dirname+ '/public'))
-mongoose.connect('mongodb://localhost/halaFood');
+mongoose.connect(process.env.DATABASEURL);
+//mongoose.connect("mongodb://hala:Hala2535@ds159661.mlab.com:59661/freshala")
 
 
 
