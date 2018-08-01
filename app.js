@@ -4,12 +4,12 @@ const mongoose = require("mongoose")
 const Hala = require('./models/fresh')
 const seeDB = require("./seedb");
 
+const url = process.env.DATABASEURL||'mongodb://localhost/halaFood';
+mongoose.connect(url);
+
 seeDB();
 app.set('view engine', 'ejs')
-app.use(express.static(__dirname+ '/public'))
-mongoose.connect(process.env.DATABASEURL);
-
-
+app.use(express.static(__dirname+ '/public'));
 
 
 

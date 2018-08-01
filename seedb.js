@@ -37,20 +37,20 @@
  ]
  
  function seeDB(){
-    data.forEach(function(seed){
-     Hala.create(seed, function(error, fresh){
-       if(error){
-         console.log(error)
-       }else{
-         console.log("add data to the database")
-       }
-        }) 
-    })
-//     Hala.remove({}, function(err){
-//         if(err){
-//       console.log(err);
-//         }
-//   })
+    // data.forEach(function(seed){
+    //  Hala.create(seed, function(error, fresh){
+    //    if(error){
+    //      console.log(error)
+    //    }else{
+    //      console.log("add data to the database")
+    //    }
+    //     }) 
+    // })
+    Hala.remove({}, function(err){
+         if(err){
+       console.log(err);
+        }
+  })
  }
  
  
