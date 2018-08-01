@@ -46,11 +46,11 @@
         }
          }) 
      })
-    // Hala.remove({}, function(err){
-    //      if(err){
-    //   console.log(err);
-    //     }
-  //})
+//     Hala.remove({}, function(err){
+//          if(err){
+//       console.log(err);
+//         }
+//  })
  }
  
  
