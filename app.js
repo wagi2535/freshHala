@@ -7,7 +7,7 @@ const seeDB = require("./seedb");
 const url = process.env.DATABASEURL||'mongodb://localhost/halaFood';
 mongoose.connect(url);
 
-//seeDB();
+seeDB();
 app.set('view engine', 'ejs')
 app.use(express.static(__dirname+ '/public'));
 
